@@ -1,0 +1,196 @@
+.card img {
+  width: 30px;
+  height: 30px;
+}
+#bg {
+  background: rgba(52, 49, 2, 0.7) url("bg.jpg"); 
+  background-size: cover;
+  background-blend-mode: darken;
+}
+
+.progress-container {
+  width: 100%;
+  background: transparent;
+}
+
+.progress-bar {
+  height: 10px;
+  background-color: #73c026;
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
+  /* margin-bottom: 10px; */
+}
+
+/* Adjust the widths based on your percentages */
+.financing {
+  width: 80%;
+}
+.consulting {
+  width: 85%;
+}
+.capital {
+  width: 74%;
+}
+.technology {
+  width: 91%;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 10px;
+  font-size: 13px;
+  color: white;
+}
+
+li::before {
+  content: "\2713"; /* Checkmark symbol */
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 18px;
+  color: #73c026;
+}
+
+/* Our Partner */
+
+/* Styles for the carousel container */
+.carousel-container {
+  width: 100%;
+  max-width: 800px; /* Adjust as needed */
+  margin: auto;
+  text-align: center;
+}
+
+/* Styles for the carousel slide */
+/* .carousel-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+} */
+
+/* Styles for partner logos */
+.carousel-slide img {
+  margin: 0 15px;
+  max-height: 100px; /* Adjust as needed */
+  opacity: 0.5; /* Deselected images */
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Selected image */
+.carousel-slide img.active {
+  opacity: 1;
+}
+
+/* Pagination dots */
+.indicators {
+  margin-top: 20px;
+}
+
+/* .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+} */
+
+.dot.active {
+  background-color: #333;
+}
+
+
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #353434a0;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #34e710;
+}
+/* ------------------------------- */
+/* home */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+}
+.slider-item {
+
+  position: relative;
+  min-width: 100%;
+  height: 800px;
+} 
+
+.slider-control-prev,
+.slider-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 80px;
+  font-weight: lighter;
+  z-index: 1;
+}
+
+.slider-control-prev {
+  left: 80px;
+}
+
+.slider-control-next {
+  right: 80px;
+}
+
+.slider-indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 5px;
+}
+
+.slider-indicators button {
+  width: 10px;
+  height: 10px;
+  border: none;
+  border-radius: 50%;
+  background-color: #ccc;
+  cursor: pointer;
+  outline: none;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.slider-indicators button.active {
+  background-color: #73c026;
+}
+
